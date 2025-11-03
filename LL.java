@@ -1,5 +1,5 @@
 class LL{
-
+Node head;
 class Node{
     String data;
     Node next; // next b node ho ge tu 
@@ -46,18 +46,20 @@ currNode.next = newNode;
 
 }
 
-//priny 
+//print
 public void printList(){
-        Node newNode = new Node(data);
-
+if (head==null) {
+    System.out.println("List is empty");
+    return;
+}
     Node currNode = head;
-    while (currNode.next!=null) {
+    while (currNode!=null) {
         System.out.print(currNode.data+ " -> " );
         currNode=currNode.next;
         
     }
-currNode.next = newNode;
 
+    System.out.println("NULL");
 }
 
 
@@ -67,8 +69,18 @@ currNode.next = newNode;
         
         LL list = new LL();
 
- list.addFirst("This");
+ list.addFirst("a");
+
  list.addFirst("is");
 
+list.printList();
+
+
+list.addLast("list");
+list.printList();
+
+
+list.addFirst("This");
+list.printList();
     }
 }
