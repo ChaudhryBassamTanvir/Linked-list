@@ -1,6 +1,9 @@
 """" Array List"""
 Insert O(n)
 Search O(1)
+if we have to search again again then array list 
+but if we have to insert again and again then LinkedList 
+
 
 
 *** Linked List ***
