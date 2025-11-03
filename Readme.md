@@ -12,3 +12,11 @@ node has
 Data and refrence 
 
 
+
+head and tail in linked list 
+
+Single head--next node----end
+Double head<-->next node <-->end
+Circular  if last node connected to head  then circular 
+
+
