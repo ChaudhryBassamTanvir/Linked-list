@@ -34,9 +34,13 @@ for (int i = 0; i < list1.size(); i++) {
 System.out.println("Null");
 
 
-list1.removeFirst();
+// list1.removeFirst();
 System.out.println(list1);
-list1.removeLast();
+// list1.removeLast();
 System.out.println(list1);
-    }
+list1.remove(1);
+System.out.println(list1);
+
+
+}
 }
