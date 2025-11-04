@@ -45,6 +45,38 @@ currNode.next = newNode;
 
 
 }
+//delete first
+public void deleteFirst(){
+    if (head==null) {
+System.out.println("The list is empty");
+        return;
+    }
+    head=head.next;
+}
+
+public void deletelast(){
+    if (head==null) {
+System.out.println("The list is empty");
+        return;
+    }
+if (head.next==null) {
+    head=null;
+    return;
+    
+}
+
+Node secondLast = head;
+Node lastNode= head.next; //head.next = null -> lastNode=null
+    while (lastNode.next!=null) {//null.next so error
+        lastNode=lastNode.next;
+        secondLast=secondLast.next;
+        
+    }
+    secondLast.next=null;
+}
+
+
+
 
 //print
 public void printList(){

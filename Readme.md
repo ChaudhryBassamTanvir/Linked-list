@@ -1,4 +1,4 @@
-"""" Array List"""
+```` Array List````
 Insert O(n)
 Search O(1)
 if we have to search again again then array list 
