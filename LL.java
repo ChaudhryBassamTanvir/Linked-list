@@ -138,6 +138,6 @@ list.deletelast();
 list.printList();
 
 
-list.getSize();
+System.out.println(list.getSize());;
 }
 }
