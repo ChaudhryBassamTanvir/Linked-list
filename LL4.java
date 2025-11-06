@@ -1,8 +1,8 @@
-public class LL3{
-Node head;
+public class LL4 {
+    Node head;
 private int size;
 
-LL3(){
+LL4(){
     this.size=0;
 }
 class Node{
@@ -120,9 +120,9 @@ if (head==null || head.next ==null) {
 
     head=prevNode;
 }
-public static void main(String[] args){
-        
-        LL3 list = new LL3();
+    public static void main(String[] args) {
+          
+        LL4 list = new LL4();
         list.addLast(1);
         list.addLast(2);
         list.addLast(3);
@@ -130,8 +130,6 @@ public static void main(String[] args){
         list.addLast(5);
 list.printList();
 
-list.reverseLinkedList();
 list.printList();
-
-}
+    }
 }
