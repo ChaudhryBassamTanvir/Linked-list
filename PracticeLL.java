@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 
 public class PracticeLL {
+
+    //remove nth node from end
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
 list.add(1);
