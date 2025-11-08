@@ -99,27 +99,20 @@ if (head==null) {
 }
 
 // reverse
-public void reverseLinkedList(){
-if (head==null || head.next ==null) {
-    return;
+public Node reverseRecusrive(Node head){
+if (head==null || head.next==null) {
+return head;    
 }
 
-    Node currNode= head.next;
-    Node prevNode=head;
-    while (currNode!=null) {
-        Node nextNode= currNode.next;
-        currNode.next=prevNode;
-    
 
-        //update
-        prevNode=currNode;
-        currNode=nextNode;
-        
-    }
-    head.next=null;
+   Node newHead= reverseRecusrive(head.next);
+   head.next.next=head;
+   head.next=null;
 
-    head=prevNode;
+   return newHead;
 }
+
+
     public static void main(String[] args) {
           
         LL4 list = new LL4();
@@ -129,6 +122,8 @@ if (head==null || head.next ==null) {
         list.addLast(4);
         list.addLast(5);
 list.printList();
+
+list.head = list.reverseRecusrive(list.head);
 
 list.printList();
     }
