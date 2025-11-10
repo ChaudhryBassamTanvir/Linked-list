@@ -120,6 +120,31 @@ public class PracticeLL {
         return true;
     }
 
+
+//host cycle
+public boolean hasCycle(Node head){
+    if (head==null) {
+    return false;
+}
+   Node hare=head;
+    Node turtle= head;
+
+
+    while (hare.next!=null && hare!=null) {
+        hare=hare.next.next;
+        turtle=turtle.next;
+
+
+        if (hare==turtle) {
+            return true;
+        }
+
+        
+    }
+    return false;
+
+}
+
     public static void main(String[] args) {
         PracticeLL list = new PracticeLL();
         list.addFirst(1);
